@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self' https://formspree.io/ https://jsonplaceholder.typicode.com/; base-uri 'self'; img-src 'self'"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kevyn Smith" />
+        <meta
+            name="description"
+            content="Web development portfolio for Kevyn Smith."
+        />
+        <link href="./favicon.ico" rel="icon" type="image/png" />
+        <link href="./CSS/index.css" rel="stylesheet" />
+        <script src="./JS/index.js" defer></script>
+        <title>Portfolio Site</title>
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="main-heading">&lt;My Portfolio Site/&gt;</h1>
+            <nav id="nav">
+                <ul id="link-list">
+                    <li class="link-item">
+                        <a href="#about-me-section" class="link">About Me</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#projects-section" class="link">Projects</a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#certifications-section" class="link"
+                            >Certifications</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <button id="open-form-button" class="btn">Contact Me</button>
+            <dialog id="contact-form-modal">
+                <form id="contact-form">
+                    <div id="contact-heading-container">
+                        <h2 id="contact-form-heading">Send me a message</h2>
+                        <button
+                            type="button"
+                            id="close-form-button"
+                            aria-label="close form"
+                            class="btn"
+                        >
+                            X
+                        </button>
+                    </div>
+                    <noscript
+                        >JavaScript must be enabled to use this feature, please
+                        enable JavaScript.</noscript
+                    >
+                    <label for="contact-name" class="contact-form-label"
+                        >Name:</label
+                    >
+                    <input
+                        id="contact-name"
+                        name="contact-name"
+                        pattern="^[a-zA-Z0-9 .-]+$"
+                        type="text"
+                        minlength="3"
+                        maxlength="40"
+                        required
+                    />
+                    <label for="contact-email" class="contact-form-label"
+                        >Email:</label
+                    >
+                    <input
+                        id="contact-email"
+                        name="contact-email"
+                        pattern="^[a-zA-Z0-9 .@-]+$"
+                        type="email"
+                        minlength="6"
+                        maxlength="40"
+                        required
+                    />
+                    <label for="contact-message" class="contact-form-label"
+                        >Message:</label
+                    >
+                    <textarea
+                        id="contact-message"
+                        form="contact-form"
+                        name="contact-message"
+                        pattern="^[a-zA-Z0-9 .-]+$"
+                        minlength="3"
+                        maxlength="120"
+                        rows="10"
+                        cols="50"
+                        required
+                    ></textarea>
+                    <label
+                        for="contact-business"
+                        id="contact-business-label"
+                        class="contact-form-label"
+                        >Company Name:</label
+                    >
+                    <input
+                        type="text"
+                        maxlength="30"
+                        id="contact-business"
+                        name="contact-business"
+                        pattern="^[a-zA-Z0-9 .-]+$"
+                        autocomplete="off"
+                    />
+                    <button type="submit" id="send-form-button" class="btn">
+                        Send
+                    </button>
+                    <p id="form-status"></p>
+                </form>
+            </dialog>
+        </header>
+        <main id="main">
+            <section id="about-me-section">
+                <h2>
+                    Hi, my name is Kevyn. I'm a web developer ready to assist
+                    you in creating modern websites and apps that are
+                    performant, responsive and accessible!
+                </h2>
+                <p>
+                    Here are some of the technologies that I have experience
+                    with:
+                </p>
+                <ul id="top-level-tech-list">
+                    <li>
+                        HTML
+                        <ul class="tech-list">
+                            <li>Prioritizing accessible markup</li>
+                            <li>Semantically correct elements</li>
+                        </ul>
+                    </li>
+                    <li>
+                        CSS
+                        <ul class="tech-list">
+                            <li>Flexbox and Grid layouts</li>
+                            <li>User friendly designs</li>
+                        </ul>
+                    </li>
+                    <li>
+                        JavaScript
+                        <ul class="tech-list">
+                            <li>ES6+ features</li>
+                            <li>Performant and maintainable code</li>
+                        </ul>
+                    </li>
+                    <li>
+                        React
+                        <ul class="tech-list">
+                            <li>Efficient DOM management</li>
+                            <li>Using state and hooks</li>
+                        </ul>
+                    </li>
+                    <li>
+                        TypeScript
+                        <ul class="tech-list">
+                            <li>Added type safety</li>
+                            <li>Latest features</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects-section">
+                <h2>Here are some of the projects that I have made:</h2>
+                <div id="projects-container">
+                    <div class="project">
+                        <h3>BlackJack Browser Game</h3>
+                        <img
+                            src="./Assets/Images/blackjack-screenshot.png"
+                            alt="Playing cards on a table with game options below"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a
+                            href="https://github.com/KSmith8888/TypeScript-Blackjack"
+                            >Source Code</a
+                        >
+                        <a
+                            href="https://ksmith8888.github.io/TypeScript-Blackjack/"
+                            >Live Site</a
+                        >
+                    </div>
+                    <div class="project">
+                        <h3>Bank Website</h3>
+                        <img
+                            src="./Assets/Images/bank-screenshot.png"
+                            alt="The home page of a bank website with a login form and an advertisement"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a href="https://github.com/KSmith8888/Bank-Website"
+                            >Source Code</a
+                        >
+                        <a href="https://ksmith8888.github.io/Bank-Website/"
+                            >Live Site</a
+                        >
+                    </div>
+                    <div class="project">
+                        <h3>Ecommerce App</h3>
+                        <img
+                            src="./Assets/Images/ecommerce-screenshot.png"
+                            alt="An ecommerce page full of product listings and a shopping cart"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a
+                            href="https://github.com/KSmith8888/React-Ecommerce-Site"
+                            >Source Code</a
+                        >
+                        <a
+                            href="https://ksmith8888.github.io/React-Ecommerce-Site/"
+                            >Live Site</a
+                        >
+                    </div>
+                    <div class="project">
+                        <h3>Canvas Browser Game</h3>
+                        <img
+                            src="./Assets/Images/rough-seas-screenshot.png"
+                            alt="The title screen of a game with a pixelated ocean and clouds"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a href="https://github.com/KSmith8888/Rough-Seas"
+                            >Source Code</a
+                        >
+                        <a href="https://ksmith8888.github.io/Rough-Seas/"
+                            >Live Site</a
+                        >
+                    </div>
+                    <div class="project">
+                        <h3>Task Manager Progressive Web App</h3>
+                        <img
+                            src="./Assets/Images/task-app-screenshot.png"
+                            alt="A task management app screen with options to add tasks and a logo of a computer monitor over a large legal notepad"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a
+                            href="https://github.com/KSmith8888/Programming-Task-App"
+                            >Source Code</a
+                        >
+                        <a
+                            href="https://ksmith8888.github.io/Programming-Task-App/"
+                            >Live Site</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <section id="certifications-section">
+                <h2>Here are some of the certifications that I have earned:</h2>
+                <ul>
+                    <li>Scrimba frontend developer bootcamp</li>
+                    <li>
+                        FreeCodeCamp JavaScript Data Structures and Algorithms
+                        certification
+                    </li>
+                    <li>FreeCodeCamp Responsive Web Design certification</li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <small class="footer-text"
+                >Contact form submissions are handled through
+                <a href="https://formspree.io/">Formspree</a></small
+            >
+        </footer>
+    </body>
+</html>

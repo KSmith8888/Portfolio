@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    color: black;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+#header {
+    width: 100%;
+    min-height: 8em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(5, 20%);
+    border-bottom: 2px solid black;
+    position: fixed;
+    background-color: rgb(23, 10, 80);
+    background: linear-gradient(rgba(1, 0, 7, 0.7), rgba(2, 0, 10, 0.3)),
+        url("../Assets/Images/blueprint.jpg");
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+#main-heading {
+    margin: 0;
+    grid-column: 1/7;
+    grid-row: 2/5;
+    color: #eeeaea;
+    text-shadow: 1px 1px 1px black;
+}
+
+#nav {
+    grid-column: 7/10;
+    grid-row: 2/5;
+}
+
+#link-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.link-item {
+    margin: 0 0.5em;
+}
+
+.link {
+    font-size: 1.2rem;
+    color: #eeeaea;
+}
+
+#open-form-button {
+    margin: auto 0;
+    grid-column: 10/11;
+    grid-row: 2/5;
+    width: 8em;
+    height: 2em;
+}
+
+#top-level-tech-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tech-list {
+    margin: 0 1em;
+    list-style: square;
+}
+
+#main {
+    padding: 10em 1em 1em 1em;
+    width: 100%;
+}
+
+#projects-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 50%;
+}
+
+.project-image {
+    border: 1px solid black;
+}
+
+#contact-form-modal[open] {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30vw;
+    min-height: 75vh;
+    background-color: rgb(209, 202, 202);
+    padding: 2em 2em 1em 2em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#close-form-button {
+    width: 2em;
+    height: 2em;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#send-form-button {
+    width: 6em;
+    margin: 1em 0 0 0;
+}
+
+#contact-message {
+    resize: none;
+}
+
+.contact-form-label {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(209, 202, 202);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(179, 177, 177);
+}
+
+#contact-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#contact-form-heading {
+    margin: 0 0 1em 0;
+}
+
+.footer {
+    width: 100%;
+    padding: 2em 0;
+    text-align: center;
+}
