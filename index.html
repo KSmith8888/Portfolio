@@ -59,7 +59,6 @@
                     <input
                         id="contact-name"
                         name="contact-name"
-                        pattern="^[a-zA-Z0-9 .-]+$"
                         type="text"
                         minlength="3"
                         maxlength="40"
@@ -71,7 +70,6 @@
                     <input
                         id="contact-email"
                         name="contact-email"
-                        pattern="^[a-zA-Z0-9 .@-]+$"
                         type="email"
                         minlength="6"
                         maxlength="40"
@@ -84,7 +82,6 @@
                         id="contact-message"
                         form="contact-form"
                         name="contact-message"
-                        pattern="^[a-zA-Z0-9 .-]+$"
                         minlength="3"
                         maxlength="120"
                         rows="10"
@@ -102,7 +99,6 @@
                         maxlength="30"
                         id="contact-business"
                         name="contact-business"
-                        pattern="^[a-zA-Z0-9 .-]+$"
                         autocomplete="off"
                     />
                     <button type="submit" id="send-form-button" class="btn">
@@ -114,74 +110,87 @@
         </header>
         <main id="main">
             <section id="about-me-section">
-                <h2>
-                    Hi, my name is Kevyn. I'm a web developer ready to assist
-                    you in creating modern websites and apps that are
-                    performant, responsive and accessible!
-                </h2>
-                <p>
-                    Here are some of the technologies that I have experience
-                    with:
-                </p>
-                <ul id="top-level-tech-list">
-                    <li>
-                        HTML
-                        <ul class="tech-list">
-                            <li>Prioritizing accessible markup</li>
-                            <li>Semantically correct elements</li>
-                        </ul>
-                    </li>
-                    <li>
-                        CSS
-                        <ul class="tech-list">
-                            <li>Flexbox and Grid layouts</li>
-                            <li>User friendly designs</li>
-                        </ul>
-                    </li>
-                    <li>
-                        JavaScript
-                        <ul class="tech-list">
-                            <li>ES6+ features</li>
-                            <li>Performant and maintainable code</li>
-                        </ul>
-                    </li>
-                    <li>
-                        React
-                        <ul class="tech-list">
-                            <li>Efficient DOM management</li>
-                            <li>Using state and hooks</li>
-                        </ul>
-                    </li>
-                    <li>
-                        TypeScript
-                        <ul class="tech-list">
-                            <li>Added type safety</li>
-                            <li>Latest features</li>
-                        </ul>
-                    </li>
-                </ul>
+                <div id="about-me-left">
+                    <h2 id="about-me-heading">
+                        Hi, my name is Kevyn. I'm a web developer ready to
+                        assist you in creating modern websites and apps that are
+                        performant, responsive and accessible!
+                    </h2>
+                    <img id="about-me-image" />
+                </div>
+                <div id="about-me-right">
+                    <h3 id="tech-heading">
+                        Here are some of the technologies that I have experience
+                        with:
+                    </h3>
+                    <ul id="top-level-tech-list">
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name" id="tech-list-html">
+                                HTML
+                            </h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">
+                                    Prioritizing accessible markup
+                                </li>
+                                <li class="tech-list-item">
+                                    Semantically correct elements
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name" id="tech-list-css">
+                                CSS
+                            </h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">
+                                    Flexbox and Grid layouts
+                                </li>
+                                <li class="tech-list-item">
+                                    User friendly designs
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name" id="tech-list-js">
+                                JavaScript
+                            </h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">ES6+ features</li>
+                                <li class="tech-list-item">
+                                    Performant and maintainable code
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name" id="tech-list-react">
+                                React
+                            </h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">
+                                    Efficient DOM management
+                                </li>
+                                <li class="tech-list-item">
+                                    Using state and hooks
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name" id="tech-list-ts">
+                                TypeScript
+                            </h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">
+                                    Added type safety
+                                </li>
+                                <li class="tech-list-item">Latest features</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="projects-section">
                 <h2>Here are some of the projects that I have made:</h2>
                 <div id="projects-container">
-                    <div class="project">
-                        <h3>BlackJack Browser Game</h3>
-                        <img
-                            src="./Assets/Images/blackjack-screenshot.png"
-                            alt="Playing cards on a table with game options below"
-                            height="300"
-                            width="550"
-                        />
-                        <p>A description of the project</p>
-                        <a
-                            href="https://github.com/KSmith8888/TypeScript-Blackjack"
-                            >Source Code</a
-                        >
-                        <a
-                            href="https://ksmith8888.github.io/TypeScript-Blackjack/"
-                            >Live Site</a
-                        >
-                    </div>
                     <div class="project">
                         <h3>Bank Website</h3>
                         <img
@@ -195,6 +204,22 @@
                             >Source Code</a
                         >
                         <a href="https://ksmith8888.github.io/Bank-Website/"
+                            >Live Site</a
+                        >
+                    </div>
+                    <div class="project">
+                        <h3>Canvas Browser Game</h3>
+                        <img
+                            src="./Assets/Images/rough-seas-screenshot.png"
+                            alt="The title screen of a game with a pixelated ocean and clouds"
+                            height="300"
+                            width="550"
+                        />
+                        <p>A description of the project</p>
+                        <a href="https://github.com/KSmith8888/Rough-Seas"
+                            >Source Code</a
+                        >
+                        <a href="https://ksmith8888.github.io/Rough-Seas/"
                             >Live Site</a
                         >
                     </div>
@@ -217,18 +242,20 @@
                         >
                     </div>
                     <div class="project">
-                        <h3>Canvas Browser Game</h3>
+                        <h3>BlackJack Browser Game</h3>
                         <img
-                            src="./Assets/Images/rough-seas-screenshot.png"
-                            alt="The title screen of a game with a pixelated ocean and clouds"
+                            src="./Assets/Images/blackjack-screenshot.png"
+                            alt="Playing cards on a table with game options below"
                             height="300"
                             width="550"
                         />
                         <p>A description of the project</p>
-                        <a href="https://github.com/KSmith8888/Rough-Seas"
+                        <a
+                            href="https://github.com/KSmith8888/TypeScript-Blackjack"
                             >Source Code</a
                         >
-                        <a href="https://ksmith8888.github.io/Rough-Seas/"
+                        <a
+                            href="https://ksmith8888.github.io/TypeScript-Blackjack/"
                             >Live Site</a
                         >
                     </div>

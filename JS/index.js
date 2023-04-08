@@ -12,10 +12,18 @@ const businessLabel = document.querySelector("#contact-business-label");
 const contactName = document.querySelector("#contact-name");
 const contactEmail = document.querySelector("#contact-email");
 const contactMessage = document.querySelector("#contact-message");
+const reg = new RegExp("^[a-zA-Z0-9 .@-]+$");
 
 async function handleContactForm(event) {
     try {
         event.preventDefault();
+        if (
+            !reg.test(contactName.value) ||
+            !reg.test(contactEmail.value) ||
+            !reg.test(contactMessage.value)
+        ) {
+            throw new Error("Validation Error");
+        }
         const data = new FormData(event.target);
         if (!contactBusiness.value) {
             const response = await fetch(
@@ -37,6 +45,8 @@ async function handleContactForm(event) {
                     contactModal.close();
                     formStatus.textContent = "";
                     sendFormBtn.disabled = false;
+                    contactForm.reset();
+                    contactModal.close();
                 }, 4000);
             } else {
                 throw new Error(`Status error: ${response.status}`);
@@ -46,10 +56,15 @@ async function handleContactForm(event) {
             contactModal.close();
         }
     } catch (err) {
-        formStatus.textContent =
-            "There has been an error, please try again later.";
+        if (err.message === "Validation Error") {
+            formStatus.textContent =
+                "Please do not include special characters in your message";
+        } else {
+            formStatus.textContent =
+                "There has been an error, please try again later.";
+            sendFormBtn.disabled = true;
+        }
         console.error(err);
-        sendFormBtn.disabled = true;
     }
 }
 
