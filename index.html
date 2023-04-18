@@ -113,10 +113,11 @@
                 <div id="about-me-left">
                     <h2 id="about-me-heading">
                         Hi, my name is Kevyn. I'm a web developer ready to
-                        assist you in creating modern websites and apps that are
-                        performant, responsive and accessible!
+                        assist you in creating modern websites and apps that
+                        are:
+                        <span>Performant</span><span>Responsive</span
+                        ><span>Accessible</span>
                     </h2>
-                    <img id="about-me-image" />
                 </div>
                 <div id="about-me-right">
                     <h3 id="tech-heading">
@@ -167,7 +168,7 @@
                             </h4>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
-                                    Efficient DOM management
+                                    Functional components
                                 </li>
                                 <li class="tech-list-item">
                                     Using state and hooks
@@ -185,19 +186,30 @@
                                 <li class="tech-list-item">Latest features</li>
                             </ul>
                         </li>
+                        <li class="top-level-tech-list-item">
+                            <h4 class="tech-list-name">Version Control</h4>
+                            <ul class="tech-list">
+                                <li class="tech-list-item">
+                                    Using Git to create safer and more modular
+                                    code
+                                </li>
+                                <li class="tech-list-item">
+                                    Branching to add new features
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
             <section id="projects-section">
                 <h2>Here are some of the projects that I have made:</h2>
-                <div id="projects-container">
-                    <div class="project">
+                <div class="projects-container">
+                    <article class="project-desktop">
                         <h3>Bank Website</h3>
                         <img
-                            src="./Assets/Images/bank-screenshot.png"
+                            src="./Assets/Images/screenshots/bank-screenshot.png"
                             alt="The home page of a bank website with a login form and an advertisement"
-                            height="300"
-                            width="550"
+                            class="project-image"
                         />
                         <p>A description of the project</p>
                         <a href="https://github.com/KSmith8888/Bank-Website"
@@ -206,14 +218,13 @@
                         <a href="https://ksmith8888.github.io/Bank-Website/"
                             >Live Site</a
                         >
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project-desktop">
                         <h3>Canvas Browser Game</h3>
                         <img
-                            src="./Assets/Images/rough-seas-screenshot.png"
+                            src="./Assets/Images/screenshots/rough-seas-screenshot.png"
                             alt="The title screen of a game with a pixelated ocean and clouds"
-                            height="300"
-                            width="550"
+                            class="project-image"
                         />
                         <p>A description of the project</p>
                         <a href="https://github.com/KSmith8888/Rough-Seas"
@@ -222,32 +233,32 @@
                         <a href="https://ksmith8888.github.io/Rough-Seas/"
                             >Live Site</a
                         >
-                    </div>
-                    <div class="project">
-                        <h3>Ecommerce App</h3>
+                    </article>
+                </div>
+                <div class="projects-container">
+                    <article class="project-mobile">
+                        <h3>React Movie Search App</h3>
                         <img
-                            src="./Assets/Images/ecommerce-screenshot.png"
-                            alt="An ecommerce page full of product listings and a shopping cart"
-                            height="300"
-                            width="550"
+                            src="./Assets/Images/screenshots/movie-search-screenshot.png"
+                            alt="A search interface to get movie results by title"
+                            class="project-image"
                         />
                         <p>A description of the project</p>
                         <a
-                            href="https://github.com/KSmith8888/React-Ecommerce-Site"
+                            href="https://github.com/KSmith8888/React-Movie-Search-App"
                             >Source Code</a
                         >
                         <a
-                            href="https://ksmith8888.github.io/React-Ecommerce-Site/"
+                            href="https://ksmith8888.github.io/React-Movie-Search-App/"
                             >Live Site</a
                         >
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project-mobile">
                         <h3>BlackJack Browser Game</h3>
                         <img
-                            src="./Assets/Images/blackjack-screenshot.png"
+                            src="./Assets/Images/screenshots/blackjack-screenshot.png"
                             alt="Playing cards on a table with game options below"
-                            height="300"
-                            width="550"
+                            class="project-image"
                         />
                         <p>A description of the project</p>
                         <a
@@ -258,14 +269,13 @@
                             href="https://ksmith8888.github.io/TypeScript-Blackjack/"
                             >Live Site</a
                         >
-                    </div>
-                    <div class="project">
+                    </article>
+                    <article class="project-mobile">
                         <h3>Task Manager Progressive Web App</h3>
                         <img
-                            src="./Assets/Images/task-app-screenshot.png"
+                            src="./Assets/Images/screenshots/task-app-screenshot.png"
                             alt="A task management app screen with options to add tasks and a logo of a computer monitor over a large legal notepad"
-                            height="300"
-                            width="550"
+                            class="project-image"
                         />
                         <p>A description of the project</p>
                         <a
@@ -276,19 +286,80 @@
                             href="https://ksmith8888.github.io/Programming-Task-App/"
                             >Live Site</a
                         >
-                    </div>
+                    </article>
                 </div>
             </section>
             <section id="certifications-section">
                 <h2>Here are some of the certifications that I have earned:</h2>
-                <ul>
-                    <li>Scrimba frontend developer bootcamp</li>
-                    <li>
-                        FreeCodeCamp JavaScript Data Structures and Algorithms
-                        certification
-                    </li>
-                    <li>FreeCodeCamp Responsive Web Design certification</li>
-                </ul>
+                <div class="certifications-container">
+                    <article class="certificate-info">
+                        <h3>Scrimba Front-End Developer Career Path</h3>
+                        <p>
+                            Focused on a wide range of topics, including making
+                            websites interactive, responsive design, working
+                            with APIs, UI design and writing modern React.
+                        </p>
+                        <p>
+                            See more details at:
+                            <a
+                                href="https://scrimba.com/learn/frontend"
+                                target="_blank"
+                                >scrimba.com</a
+                            >
+                        </p>
+                        <img
+                            src="./Assets/Images/certifications/scrimba-cert.png"
+                            alt="Certificate of completion for the Scrimba Front-End developer career path"
+                            loading="lazy"
+                        />
+                    </article>
+                    <article class="certificate-info">
+                        <h3>
+                            FreeCodeCamp JavaScript Data Structures and
+                            Algorithms course
+                        </h3>
+                        <p>
+                            Focused on the fundementals of modern JavaScript,
+                            along with creating algorithms to solve various
+                            problems using array and object methods.
+                        </p>
+                        <p>
+                            See more details at:
+                            <a
+                                href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                                target="_blank"
+                                >freecodecamp.org</a
+                            >
+                        </p>
+                        <img
+                            src="./Assets/Images/certifications/fcc-js-cert.png"
+                            alt="Certificate of completion for the FreeCodeCamp JavaScript Data Structures and
+                        Algorithms course"
+                            loading="lazy"
+                        />
+                    </article>
+                    <article class="certificate-info">
+                        <h3>FreeCodeCamp Responsive Web Design course</h3>
+                        <p>
+                            Focused on accessibility, using semantically correct
+                            HTML and using modern CSS layouts to create
+                            responsive designs.
+                        </p>
+                        <p>
+                            See more details at:
+                            <a
+                                href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                                target="_blank"
+                                >freecodecamp.org</a
+                            >
+                        </p>
+                        <img
+                            src="./Assets/Images/certifications/fcc-rwd-cert.png"
+                            alt="Certificate of completion for the FreeCodeCamp Responsive Web Design course"
+                            loading="lazy"
+                        />
+                    </article>
+                </div>
             </section>
         </main>
         <footer class="footer">
