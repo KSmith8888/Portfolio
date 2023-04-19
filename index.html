@@ -115,8 +115,9 @@
                         Hi, my name is Kevyn. I'm a web developer ready to
                         assist you in creating modern websites and apps that
                         are:
-                        <span>Performant</span><span>Responsive</span
-                        ><span>Accessible</span>
+                        <span class="about-me-enhanced-text">Performant</span
+                        ><span class="about-me-enhanced-text">Responsive</span
+                        ><span class="about-me-enhanced-text">Accessible</span>
                     </h2>
                 </div>
                 <div id="about-me-right">
@@ -205,87 +206,266 @@
                 <h2>Here are some of the projects that I have made:</h2>
                 <div class="projects-container">
                     <article class="project-desktop">
-                        <h3>Bank Website</h3>
+                        <h3 class="project-heading">
+                            Restaurant - Public Site
+                        </h3>
+                        <img
+                            src="./Assets/Images/screenshots/res-public-screenshot.png"
+                            alt="A restaurant website containing the details of the menu"
+                            class="project-image"
+                        />
+                        <p>
+                            The public website of a fictitious restaurant.
+                            Displays information for the current menu and
+                            upcoming events, which are fetched from a database
+                            managed by a separate admin site. If the backend is
+                            not available, a set of default data is pulled from
+                            a local JSON file.
+                        </p>
+                        <p>Made with TypeScript, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/Restaurant-Public"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/Restaurant-Public/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
+                    </article>
+                    <article class="project-desktop">
+                        <h3 class="project-heading">Restaurant - Admin Site</h3>
+                        <img
+                            src="./Assets/Images/screenshots/res-admin-screenshot.png"
+                            alt="An admin page containing a header, navigation bar and employee schedules listed in a table"
+                            class="project-image"
+                        />
+                        <p>
+                            The admin website and API of a fictitious
+                            restuarant. Provides menu and event data that can be
+                            fetched by the separate public site and provides
+                            content management functionality to registered
+                            admins. User permissions are set by role, with
+                            admins having the ability to create, update and
+                            delete all types of content and employees only
+                            allowed to view information specific to them.
+                            Authorization is handled using JSON Web Tokens sent
+                            through secure, HttpOnly cookies and passwords are
+                            hashed using Bcrypt.
+                        </p>
+                        <p>Made with NodeJS, MongoDB, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/Restaurant-Admin"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the: <a href="#" target="_blank">live site</a>
+                        </p>
+                    </article>
+                </div>
+                <div class="projects-container">
+                    <article class="project-desktop">
+                        <h3 class="project-heading">Bank Website</h3>
                         <img
                             src="./Assets/Images/screenshots/bank-screenshot.png"
                             alt="The home page of a bank website with a login form and an advertisement"
                             class="project-image"
                         />
-                        <p>A description of the project</p>
-                        <a href="https://github.com/KSmith8888/Bank-Website"
-                            >Source Code</a
-                        >
-                        <a href="https://ksmith8888.github.io/Bank-Website/"
-                            >Live Site</a
-                        >
+                        <p>
+                            A website of a fictitious bank. Upon logging in,
+                            users are taken to an accounts overview page, where
+                            they can view account balances and transfer money
+                            between accounts. From there, they can navigate to
+                            pages for account details, displaying a list of
+                            transactions that can be filtered by type. On the
+                            account details pages, a credit score and report is
+                            also generated and displayed using a customized
+                            meter element. Other pages include a mortgage
+                            calculator, which fetches interest rate data from
+                            the
+                            <a
+                                href="https://fiscaldata.treasury.gov/api-documentation/"
+                                target="_blank"
+                                >U.S. Treasury API</a
+                            >
+                            to calculate mortgage payment data based on amounts
+                            entered by the user and a products page displaying
+                            information about offered projects in a rotating
+                            carousel.
+                        </p>
+                        <p>Made with JavaScript, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/Bank-Website"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/Bank-Website/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
                     </article>
                     <article class="project-desktop">
-                        <h3>Canvas Browser Game</h3>
+                        <h3 class="project-heading">Canvas Browser Game</h3>
                         <img
                             src="./Assets/Images/screenshots/rough-seas-screenshot.png"
                             alt="The title screen of a game with a pixelated ocean and clouds"
                             class="project-image"
                         />
-                        <p>A description of the project</p>
-                        <a href="https://github.com/KSmith8888/Rough-Seas"
-                            >Source Code</a
-                        >
-                        <a href="https://ksmith8888.github.io/Rough-Seas/"
-                            >Live Site</a
-                        >
+                        <p>
+                            A side-scrolling action game made with the Canvas
+                            API. The player control a battleship that represents
+                            Earth's last stand against an alien invasion.
+                            Utilizes Object Oriented Programming to create
+                            reusable enemies, obstacles and projectiles.
+                            Currently includes three levels of progressively
+                            increasing difficulty. After completing each level,
+                            the player selects an upgrade and can unlock new
+                            weapons. Progress data and user selection are saved
+                            in localStorage.
+                        </p>
+                        <p>Made with JavaScript, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/Rough-Seas"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/Rough-Seas/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
                     </article>
                 </div>
                 <div class="projects-container">
                     <article class="project-mobile">
-                        <h3>React Movie Search App</h3>
+                        <h3 class="project-heading">React Movie Search App</h3>
                         <img
                             src="./Assets/Images/screenshots/movie-search-screenshot.png"
                             alt="A search interface to get movie results by title"
-                            class="project-image"
+                            class="project-image mobile-image"
                         />
-                        <p>A description of the project</p>
-                        <a
-                            href="https://github.com/KSmith8888/React-Movie-Search-App"
-                            >Source Code</a
-                        >
-                        <a
-                            href="https://ksmith8888.github.io/React-Movie-Search-App/"
-                            >Live Site</a
-                        >
+                        <p>
+                            An app to fetch movie data from an API, through a
+                            proxy server. Users are able to search for movies by
+                            title, which fetches relevant results from the Open
+                            Movie Database. Requests are first sent though a
+                            proxy server (<a
+                                href="https://github.com/KSmith8888/API-Proxy-Server"
+                                target="_blank"
+                                >Proxy Server Project</a
+                            >) to ensure that the API key is not sent to the
+                            client and that usage is limited. Built with the
+                            Parcel bundler.
+                        </p>
+                        <p>Made with React, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/React-Movie-Search-App"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/React-Movie-Search-App/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
                     </article>
                     <article class="project-mobile">
-                        <h3>BlackJack Browser Game</h3>
+                        <h3 class="project-heading">BlackJack Browser Game</h3>
                         <img
                             src="./Assets/Images/screenshots/blackjack-screenshot.png"
                             alt="Playing cards on a table with game options below"
-                            class="project-image"
+                            class="project-image mobile-image"
                         />
-                        <p>A description of the project</p>
-                        <a
-                            href="https://github.com/KSmith8888/TypeScript-Blackjack"
-                            >Source Code</a
-                        >
-                        <a
-                            href="https://ksmith8888.github.io/TypeScript-Blackjack/"
-                            >Live Site</a
-                        >
+                        <p>
+                            A classic BlackJack game, playable in the browser.
+                            The player and dealer receive cards that have been
+                            randomly selected from a generated deck and whoever
+                            gets closest to twenty-one without going over wins.
+                            Current scores and total money remaining each hand
+                            are displayed on the board. On subsequent hands, the
+                            all time high score is shown, which is stored in
+                            localStorage.
+                        </p>
+                        <p>Made with TypeScript. HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/TypeScript-Blackjack"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/TypeScript-Blackjack/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
                     </article>
                     <article class="project-mobile">
-                        <h3>Task Manager Progressive Web App</h3>
+                        <h3 class="project-heading">Task Manager PWA</h3>
                         <img
                             src="./Assets/Images/screenshots/task-app-screenshot.png"
                             alt="A task management app screen with options to add tasks and a logo of a computer monitor over a large legal notepad"
-                            class="project-image"
+                            class="project-image mobile-image"
                         />
-                        <p>A description of the project</p>
-                        <a
-                            href="https://github.com/KSmith8888/Programming-Task-App"
-                            >Source Code</a
-                        >
-                        <a
-                            href="https://ksmith8888.github.io/Programming-Task-App/"
-                            >Live Site</a
-                        >
+                        <p>
+                            A task manager app designed as a Progressive Web
+                            App. Users can add tasks, which are saved with
+                            localStorage, then update and delete them as needed.
+                            Users can also set automatic reminders, which add
+                            tasks periodically on a set interval. The app is
+                            installable and fully functional offline.
+                        </p>
+                        <p>Made with JavaScipt, HTML and CSS.</p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://github.com/KSmith8888/Programming-Task-App"
+                                target="_blank"
+                                >source code</a
+                            >
+                        </p>
+                        <p class="link-paragraph">
+                            View the:
+                            <a
+                                href="https://ksmith8888.github.io/Programming-Task-App/"
+                                target="_blank"
+                                >live site</a
+                            >
+                        </p>
                     </article>
                 </div>
             </section>
@@ -311,6 +491,7 @@
                             src="./Assets/Images/certifications/scrimba-cert.png"
                             alt="Certificate of completion for the Scrimba Front-End developer career path"
                             loading="lazy"
+                            class="cert-image"
                         />
                     </article>
                     <article class="certificate-info">
