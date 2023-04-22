@@ -13,9 +13,24 @@
             content="Web development portfolio for Kevyn Smith."
         />
         <link href="./favicon.ico" rel="icon" type="image/png" />
+        <link href="./favicon.ico" rel="apple-touch-icon" type="image/png" />
+        <link
+            rel="preload"
+            href="./Assets/Images/blueprint.jpg"
+            as="image"
+            type="image/jpg"
+            media="(min-width: 651px)"
+        />
+        <link
+            rel="preload"
+            href="./Assets/Images/blueprint-mobile.jpg"
+            as="image"
+            type="image/jpg"
+            media="(max-width: 650px)"
+        />
         <link href="./CSS/index.css" rel="stylesheet" />
         <script src="./JS/index.js" defer></script>
-        <title>Portfolio Site</title>
+        <title>My Portfolio</title>
     </head>
     <body>
         <header id="header">
@@ -150,9 +165,9 @@
                     </h2>
                     <ul id="top-level-tech-list">
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name" id="tech-list-html">
+                            <h3 class="tech-list-name" id="tech-list-html">
                                 HTML
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Prioritizing accessible markup
@@ -163,24 +178,24 @@
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name" id="tech-list-css">
+                            <h3 class="tech-list-name" id="tech-list-css">
                                 CSS
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Using Flexbox and Grid to make responsive,
                                     user friendly layouts
                                 </li>
                                 <li class="tech-list-item">
-                                    Creating balanced, logical designs that fit
+                                    Creating clean, balanced designs that fit
                                     any project
                                 </li>
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name" id="tech-list-js">
+                            <h3 class="tech-list-name" id="tech-list-js">
                                 JavaScript
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Using ES6+ features to create more efficient
@@ -192,9 +207,9 @@
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name" id="tech-list-react">
+                            <h3 class="tech-list-name" id="tech-list-react">
                                 React
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Using modern, functional components to
@@ -206,9 +221,9 @@
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name" id="tech-list-ts">
+                            <h3 class="tech-list-name" id="tech-list-ts">
                                 TypeScript
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Creating custom interfaces to bring type
@@ -221,13 +236,13 @@
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name">
+                            <h3 class="tech-list-name">
                                 Version Control (Git)
-                            </h4>
+                            </h3>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
                                     Using basic commands such as add, commit and
-                                    push to maintain projects
+                                    push to track changes
                                 </li>
                                 <li class="tech-list-item">
                                     Creating branches and merging to add new
@@ -250,9 +265,9 @@
                             Restaurant - Public Site
                         </h3>
                         <img
-                            src="./Assets/Images/screenshots/res-public-screenshot.png"
+                            src="./Assets/Images/screenshots/res-public-desktop.png"
                             alt="A restaurant website containing the details of the menu"
-                            class="project-image"
+                            class="project-image project-image-desktop"
                         />
                         <p>
                             The public website of a fictitious restaurant.
@@ -283,9 +298,9 @@
                     <article class="project-desktop">
                         <h3 class="project-heading">Restaurant - Admin Site</h3>
                         <img
-                            src="./Assets/Images/screenshots/res-admin-screenshot.png"
+                            src="./Assets/Images/screenshots/res-admin-desktop.png"
                             alt="An admin page containing a header, navigation bar and employee schedules listed in a table"
-                            class="project-image"
+                            class="project-image project-image-desktop"
                         />
                         <p>
                             The admin website and API of a fictitious
@@ -318,9 +333,9 @@
                     <article class="project-desktop">
                         <h3 class="project-heading">Bank Website</h3>
                         <img
-                            src="./Assets/Images/screenshots/bank-screenshot.png"
+                            src="./Assets/Images/screenshots/bank-desktop.png"
                             alt="The home page of a bank website with a login form and an advertisement"
-                            class="project-image"
+                            class="project-image project-image-desktop"
                         />
                         <p>
                             A website of a fictitious bank. Upon logging in,
@@ -365,9 +380,9 @@
                     <article class="project-desktop">
                         <h3 class="project-heading">Canvas Browser Game</h3>
                         <img
-                            src="./Assets/Images/screenshots/rough-seas-screenshot.png"
+                            src="./Assets/Images/screenshots/rough-seas-desktop.png"
                             alt="The title screen of a game with a pixelated ocean and clouds"
-                            class="project-image"
+                            class="project-image project-image-desktop"
                         />
                         <p>
                             A side-scrolling action game made with the Canvas
@@ -406,7 +421,8 @@
                         <img
                             src="./Assets/Images/screenshots/movie-search-screenshot.png"
                             alt="A search interface to get movie results by title"
-                            class="project-image mobile-image"
+                            class="project-image project-image-mobile"
+                            loading="lazy"
                         />
                         <p>
                             An app to fetch movie data from an API, through a
@@ -444,7 +460,8 @@
                         <img
                             src="./Assets/Images/screenshots/blackjack-screenshot.png"
                             alt="Playing cards on a table with game options below"
-                            class="project-image mobile-image"
+                            class="project-image project-image-mobile"
+                            loading="lazy"
                         />
                         <p>
                             A classic BlackJack game, playable in the browser.
@@ -479,7 +496,8 @@
                         <img
                             src="./Assets/Images/screenshots/task-app-screenshot.png"
                             alt="A task management app screen with options to add tasks and a logo of a computer monitor over a large legal notepad"
-                            class="project-image mobile-image"
+                            class="project-image project-image-mobile"
+                            loading="lazy"
                         />
                         <p>
                             A task manager app designed as a Progressive Web
@@ -518,6 +536,8 @@
                             Focused on a wide range of topics, including making
                             websites interactive, responsive design, working
                             with APIs, UI design and writing modern React.
+                            Included more than a dozen solo projects to ensure
+                            understanding and retention of the material.
                         </p>
                         <p>
                             See more details at:
@@ -597,7 +617,9 @@
                 >Contact form submissions are handled through
                 <a href="https://formspree.io/">Formspree</a></small
             >
-            <a href="#" target="_blank"
+            <a
+                href="https://www.linkedin.com/in/kevyn-smith-58a02b1a8"
+                target="_blank"
                 ><img
                     src="./Assets/Images/linkedin-logo.png"
                     alt="The LinkedIn logo"

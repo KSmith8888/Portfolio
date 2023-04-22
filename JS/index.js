@@ -26,16 +26,13 @@ async function handleContactForm(event) {
         }
         const data = new FormData(event.target);
         if (!contactBusiness.value) {
-            const response = await fetch(
-                "https://jsonplaceholder.typicode.com/posts",
-                {
-                    method: "POST",
-                    body: data,
-                    headers: {
-                        Accept: "application/json",
-                    },
-                }
-            );
+            const response = await fetch(submitURL, {
+                method: "POST",
+                body: data,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
             if (response.ok) {
                 contactForm.reset();
                 sendFormBtn.disabled = true;

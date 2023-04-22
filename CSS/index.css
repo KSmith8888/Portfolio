@@ -107,7 +107,7 @@ section {
     border-radius: 5px;
     width: 30vw;
     min-height: 75vh;
-    background-color: rgb(230, 223, 223);
+    background-color: #eee9e9;
     padding: 2em 2em 1em 2em;
 }
 
@@ -134,6 +134,7 @@ section {
 
 .contact-form-label {
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .btn {
@@ -165,6 +166,7 @@ section {
     display: flex;
     background-color: rgb(230, 223, 223);
     border-bottom: 1px solid black;
+    padding-bottom: 1em;
 }
 
 /* About Me Section */
@@ -190,16 +192,18 @@ section {
     font-weight: 800;
     font-size: 3rem;
     margin: 0.4em 0;
+    /*color: rgb(30, 14, 99);*/
+    color: rgb(23, 10, 78);
 }
 
 #enhanced-text-main-container {
     display: flex;
-    border-radius: 10px;
     flex-direction: column;
     align-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 2em 0;
     background-size: cover;
+    border-bottom: 3px solid black;
 }
 
 .about-me-enhanced-text::before,
@@ -225,23 +229,20 @@ section {
 
 #performant-text::before {
     background-color: rgb(230, 223, 223);
-    border-radius: 10px;
     animation: typing 2s steps(10) forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 #responsive-text::before {
     background-color: rgb(230, 223, 223);
-    border-radius: 10px;
     animation: typing 2s steps(10) forwards;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 #accessible-text::before {
-    border-radius: 10px;
     background-color: rgb(230, 223, 223);
     animation: typing 2s steps(10) forwards;
-    animation-delay: 6s;
+    animation-delay: 5s;
 }
 
 #responsive-text::after {
@@ -274,6 +275,10 @@ section {
     flex-wrap: wrap;
 }
 
+.tech-list-name {
+    margin: 0.5em;
+}
+
 .top-level-tech-list-item {
     width: 50%;
     border: 1px solid black;
@@ -291,6 +296,7 @@ section {
 
 #projects-section {
     width: 100%;
+    background-color: #eee9e9;
 }
 
 .projects-container,
@@ -325,7 +331,12 @@ section {
     border: 1px solid black;
 }
 
-.mobile-image {
+.project-image-desktop {
+    width: 100%;
+}
+
+.project-image-mobile {
+    width: 70%;
     border-radius: 15px;
 }
 
@@ -341,6 +352,7 @@ section {
 }
 
 .cert-image {
+    width: 100%;
     border: 1px solid #1c1c1c;
 }
 
@@ -421,5 +433,14 @@ section {
     }
     .top-level-tech-list-item {
         width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    #header {
+        background: linear-gradient(rgba(1, 0, 7, 0.7), rgba(2, 0, 10, 0.4)),
+            url("../Assets/Images/blueprint-mobile.jpg");
+        background-size: cover;
+        background-position: 50% 80%;
     }
 }
