@@ -353,6 +353,9 @@ section {
 
 .cert-image {
     width: 100%;
+}
+
+#scrimba-cert {
     border: 1px solid #1c1c1c;
 }
 
