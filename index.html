@@ -19,7 +19,7 @@
     </head>
     <body>
         <header id="header">
-            <h1 id="main-heading">&lt;My Portfolio Site/&gt;</h1>
+            <h1 id="main-heading">My Portfolio</h1>
             <nav id="nav">
                 <ul id="link-list">
                     <li class="link-item">
@@ -109,8 +109,8 @@
             </dialog>
         </header>
         <main id="main">
-            <section id="about-me-section">
-                <div id="about-me-left">
+            <div id="first-two-sections-container">
+                <section id="about-me-section">
                     <h2 id="about-me-heading">
                         Hi, my name is Kevyn. I'm a web developer ready to
                         assist you in creating modern websites and apps that
@@ -142,12 +142,12 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div id="about-me-right">
-                    <h3 id="tech-heading">
+                </section>
+                <section id="tech-section">
+                    <h2 id="tech-heading">
                         Here are some of the technologies that I have experience
                         with:
-                    </h3>
+                    </h2>
                     <ul id="top-level-tech-list">
                         <li class="top-level-tech-list-item">
                             <h4 class="tech-list-name" id="tech-list-html">
@@ -158,7 +158,7 @@
                                     Prioritizing accessible markup
                                 </li>
                                 <li class="tech-list-item">
-                                    Semantically correct elements
+                                    Using modern, semantically correct elements
                                 </li>
                             </ul>
                         </li>
@@ -168,10 +168,12 @@
                             </h4>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
-                                    Flexbox and Grid layouts
+                                    Using Flexbox and Grid to make responsive,
+                                    user friendly layouts
                                 </li>
                                 <li class="tech-list-item">
-                                    User friendly designs
+                                    Creating balanced, logical designs that fit
+                                    any project
                                 </li>
                             </ul>
                         </li>
@@ -180,9 +182,12 @@
                                 JavaScript
                             </h4>
                             <ul class="tech-list">
-                                <li class="tech-list-item">ES6+ features</li>
                                 <li class="tech-list-item">
-                                    Performant and maintainable code
+                                    Using ES6+ features to create more efficient
+                                    logic
+                                </li>
+                                <li class="tech-list-item">
+                                    Prioritizing maintainabile and modular code
                                 </li>
                             </ul>
                         </li>
@@ -192,10 +197,11 @@
                             </h4>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
-                                    Functional components
+                                    Using modern, functional components to
+                                    create scalable user interfaces
                                 </li>
                                 <li class="tech-list-item">
-                                    Using state and hooks
+                                    Using state to manage data and logical flow
                                 </li>
                             </ul>
                         </li>
@@ -205,28 +211,39 @@
                             </h4>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
-                                    Added type safety
+                                    Creating custom interfaces to bring type
+                                    safety to any project
                                 </li>
-                                <li class="tech-list-item">Latest features</li>
+                                <li class="tech-list-item">
+                                    Using strict configurations to make projects
+                                    more scalable
+                                </li>
                             </ul>
                         </li>
                         <li class="top-level-tech-list-item">
-                            <h4 class="tech-list-name">Version Control</h4>
+                            <h4 class="tech-list-name">
+                                Version Control (Git)
+                            </h4>
                             <ul class="tech-list">
                                 <li class="tech-list-item">
-                                    Using Git to create safer and more modular
-                                    code
+                                    Using basic commands such as add, commit and
+                                    push to maintain projects
                                 </li>
                                 <li class="tech-list-item">
-                                    Branching to add new features
+                                    Creating branches and merging to add new
+                                    features
+                                </li>
+                                <li>
+                                    Resolving conflicts between divergent
+                                    branches
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                </div>
-            </section>
+                </section>
+            </div>
             <section id="projects-section">
-                <h2>Here are some of the projects that I have made:</h2>
+                <h2>Here are some of the projects that I've made:</h2>
                 <div class="projects-container">
                     <article class="project-desktop">
                         <h3 class="project-heading">
@@ -493,7 +510,7 @@
                 </div>
             </section>
             <section id="certifications-section">
-                <h2>Here are some of the certifications that I have earned:</h2>
+                <h2>Here are some of the certifications that I've earned:</h2>
                 <div class="certifications-container">
                     <article class="certificate-info">
                         <h3>Scrimba Front-End Developer Career Path</h3>
@@ -567,10 +584,28 @@
             </section>
         </main>
         <footer class="footer">
+            <a href="https://github.com/KSmith8888" target="_blank"
+                ><img
+                    src="./Assets/Images/github-logo.png"
+                    alt="The Github logo"
+                    class="social-link-image"
+                    width="50"
+                    title="Visit my Github profile"
+                    loading="lazy"
+            /></a>
             <small class="footer-text"
                 >Contact form submissions are handled through
                 <a href="https://formspree.io/">Formspree</a></small
             >
+            <a href="#" target="_blank"
+                ><img
+                    src="./Assets/Images/linkedin-logo.png"
+                    alt="The LinkedIn logo"
+                    class="social-link-image"
+                    width="50"
+                    title="Visit my LinkedIn profile"
+                    loading="lazy"
+            /></a>
         </footer>
     </body>
 </html>
