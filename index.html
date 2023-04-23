@@ -18,14 +18,14 @@
             rel="preload"
             href="./Assets/Images/blueprint.jpg"
             as="image"
-            type="image/jpg"
+            type="image/jpeg"
             media="(min-width: 651px)"
         />
         <link
             rel="preload"
             href="./Assets/Images/blueprint-mobile.jpg"
             as="image"
-            type="image/jpg"
+            type="image/jpeg"
             media="(max-width: 650px)"
         />
         <link href="./CSS/index.css" rel="stylesheet" />
@@ -258,8 +258,10 @@
                 </section>
             </div>
             <section id="projects-section">
-                <h2>Here are some of the projects that I've made:</h2>
-                <div class="projects-container">
+                <h2 id="project-section-heading">
+                    Here are some of the projects that I've made:
+                </h2>
+                <div class="projects-container projects-container-desktop">
                     <article class="project-desktop">
                         <h3 class="project-heading">
                             Restaurant - Public Site
@@ -325,11 +327,16 @@
                             >
                         </p>
                         <p class="link-paragraph">
-                            View the: <a href="#" target="_blank">live site</a>
+                            View the:
+                            <a
+                                href="https://restaurant-admin-production.up.railway.app"
+                                target="_blank"
+                                >live site</a
+                            >
                         </p>
                     </article>
                 </div>
-                <div class="projects-container">
+                <div class="projects-container projects-container-desktop">
                     <article class="project-desktop">
                         <h3 class="project-heading">Bank Website</h3>
                         <img
@@ -528,7 +535,9 @@
                 </div>
             </section>
             <section id="certifications-section">
-                <h2>Here are some of the certifications that I've earned:</h2>
+                <h2 id="certifications-section-heading">
+                    Here are some of the certifications that I've earned:
+                </h2>
                 <div class="certifications-container">
                     <article class="certificate-info">
                         <h3>Scrimba Front-End Developer Career Path</h3>
