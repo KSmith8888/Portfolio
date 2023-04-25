@@ -1,3 +1,8 @@
 /*
-  Content-Security-Policy: default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self' https://formspree.io/; base-uri 'self'; img-src 'self'
+  Content-Security-Policy: default-src 'none'
+  Content-Security-Policy: style-src 'self'
+  Content-Security-Policy: script-src 'self'
+  Content-Security-Policy: connect-src 'self' https://formspree.io/
+  Content-Security-Policy: base-uri 'self'
+  Content-Security-Policy: img-src 'self'
   X-Content-Type-Options: nosniff
