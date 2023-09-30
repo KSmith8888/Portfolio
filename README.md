@@ -1,6 +1,6 @@
 # Portfolio
 
-https://kevynsmith.dev/
+https://kevynsmith.netlify.app/
 
 My web development portfolio
 
